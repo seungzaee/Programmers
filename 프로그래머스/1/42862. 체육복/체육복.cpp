@@ -7,6 +7,7 @@ using namespace std;
 int solution(int n, vector<int> lost, vector<int> reserve) {
     int answer = 0;
     vector<bool> clothes(n, true);
+    // 순서가 뒤집혀 있으면 아래에서 오류 생김
     sort(lost.begin(), lost.end());
     sort(reserve.begin(), reserve.end());
     // 여유분 가져온 사람이 도난당하면 reserve, lost 둘 다에서 제외해야함
