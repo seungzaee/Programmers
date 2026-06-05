@@ -1,0 +1,6 @@
+def solution(number):
+    sum = 0
+    for i in range(len(number)) :
+        sum += int(number[i])
+    answer = sum % 9
+    return answer
