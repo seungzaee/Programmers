@@ -23,7 +23,7 @@ def solution(rectangle, characterX, characterY, itemX, itemY):
         if item_map[v[0]][v[1] -1] == True and visited[v[0]][v[1] - 1] == False :
             visited[v[0]][v[1] - 1] = True
             queue.append([v[0], v[1] - 1, v[2] + 1])
-        # 상
+        # 우
         if item_map[v[0]][v[1] + 1] == True and visited[v[0]][v[1] + 1] == False :
             visited[v[0]][v[1] + 1] = True
             queue.append([v[0], v[1] + 1, v[2] + 1])
